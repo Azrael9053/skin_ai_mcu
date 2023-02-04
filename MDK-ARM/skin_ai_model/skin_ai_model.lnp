@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"skin_ai_model\startup_stm32f103xg.o"
+"skin_ai_model\main.o"
+"skin_ai_model\stm32f1xx_it.o"
+"skin_ai_model\stm32f1xx_hal_msp.o"
+"skin_ai_model\stm32f1xx_hal_gpio_ex.o"
+"skin_ai_model\stm32f1xx_hal.o"
+"skin_ai_model\stm32f1xx_hal_rcc.o"
+"skin_ai_model\stm32f1xx_hal_rcc_ex.o"
+"skin_ai_model\stm32f1xx_hal_gpio.o"
+"skin_ai_model\stm32f1xx_hal_dma.o"
+"skin_ai_model\stm32f1xx_hal_cortex.o"
+"skin_ai_model\stm32f1xx_hal_pwr.o"
+"skin_ai_model\stm32f1xx_hal_flash.o"
+"skin_ai_model\stm32f1xx_hal_flash_ex.o"
+"skin_ai_model\stm32f1xx_hal_exti.o"
+"skin_ai_model\stm32f1xx_hal_tim.o"
+"skin_ai_model\stm32f1xx_hal_tim_ex.o"
+"skin_ai_model\stm32f1xx_hal_uart.o"
+"skin_ai_model\system_stm32f1xx.o"
+"skin_ai_model\dnn_compute.o"
+"skin_ai_model\network.o"
+"../Middlewares/ST/ARM/DSP/Lib/arm_cortexM3l_math.lib"
+--library_type=microlib --strict --scatter "skin_ai_model\skin_ai_model.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "skin_ai_model.map" -o skin_ai_model\skin_ai_model.axf
